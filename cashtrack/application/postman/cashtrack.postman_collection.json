@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "3268079b-3b15-4204-b4b8-6a49a7a5d7d5",
+		"name": "cashtrack",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add companies",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Costa Caffe s.r.o\",\n\t\"type\":\"customer\",\n\t\"userId\":\"spring-user\",\n\t\"taxId\":\"1234567\",\n\t\"address\":{\n\t\t\"addressLine\":\"Vinohradska 151\",\n\t\t\"city\":\"Prague\"'\n\t\t\"postalCode\":\"13000\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "http://localhost:4567/v1/companies/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4567",
+					"path": [
+						"v1",
+						"companies",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
